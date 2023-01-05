@@ -298,7 +298,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
           prefixIcon: SelectorButton(
         country: country,
         countries: countries,
-        selectorButtonBuilder: selectorButtonBuilder,
+        selectorButtonBuilder: widget.selectorButtonBuilder,
         onCountryChanged: onCountryChanged,
         selectorConfig: widget.selectorConfig,
         selectorTextStyle: widget.selectorTextStyle,
