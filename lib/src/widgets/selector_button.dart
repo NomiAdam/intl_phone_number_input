@@ -20,6 +20,8 @@ class SelectorButton extends StatelessWidget {
 
   final ValueChanged<Country?> onCountryChanged;
 
+  final Widget Function(BuildContext, Widget)? selectorButtonBuilder;
+
   const SelectorButton({
     Key? key,
     required this.countries,
@@ -32,6 +34,7 @@ class SelectorButton extends StatelessWidget {
     required this.onCountryChanged,
     required this.isEnabled,
     required this.isScrollControlled,
+    this.selectorButtonBuilder,
   }) : super(key: key);
 
   @override
@@ -48,6 +51,7 @@ class SelectorButton extends StatelessWidget {
                     leadingPadding: selectorConfig.leadingPadding,
                     trailingSpace: selectorConfig.trailingSpace,
                     textStyle: selectorTextStyle,
+                    selectorButtonBuilder: selectorButtonBuilder,
                   ),
                   value: country,
                   items: mapCountryToDropdownItem(countries),
@@ -61,6 +65,7 @@ class SelectorButton extends StatelessWidget {
                 leadingPadding: selectorConfig.leadingPadding,
                 trailingSpace: selectorConfig.trailingSpace,
                 textStyle: selectorTextStyle,
+                selectorButtonBuilder: selectorButtonBuilder
               )
         : MaterialButton(
             key: Key(TestHelper.DropdownButtonKeyValue),
@@ -92,6 +97,7 @@ class SelectorButton extends StatelessWidget {
                 leadingPadding: selectorConfig.leadingPadding,
                 trailingSpace: selectorConfig.trailingSpace,
                 textStyle: selectorTextStyle,
+                selectorButtonBuilder: selectorButtonBuilder
               ),
             ),
           );
@@ -111,6 +117,7 @@ class SelectorButton extends StatelessWidget {
           textStyle: selectorTextStyle,
           withCountryNames: false,
           trailingSpace: selectorConfig.trailingSpace,
+          selectorButtonBuilder: selectorButtonBuilder
         ),
       );
     }).toList();

@@ -12,12 +12,15 @@ class Item extends StatelessWidget {
   final double? leadingPadding;
   final bool trailingSpace;
 
+  final Widget Function(BuildContext, Widget)? selectorButtonBuilder;
+
   const Item({
     Key? key,
     this.country,
     this.showFlag,
     this.useEmoji,
     this.textStyle,
+    this.selectorButtonBuilder,
     this.withCountryNames = false,
     this.leadingPadding = 12,
     this.trailingSpace = true,
@@ -29,17 +32,21 @@ class Item extends StatelessWidget {
     if (trailingSpace) {
       dialCode = dialCode.padRight(5, "   ");
     }
+    final flag = _Flag(
+            country: country,
+            showFlag: showFlag,
+            useEmoji: useEmoji,
+          );
+          if (selectorButtonBuilder != null) {
+            return selectorButtonBuilder(context, flag);
+          }
     return Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           SizedBox(width: leadingPadding),
-          _Flag(
-            country: country,
-            showFlag: showFlag,
-            useEmoji: useEmoji,
-          ),
+          flag,
           SizedBox(width: 12.0),
           Text(
             '$dialCode',
