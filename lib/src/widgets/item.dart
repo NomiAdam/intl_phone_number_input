@@ -38,7 +38,7 @@ class Item extends StatelessWidget {
             useEmoji: useEmoji,
           );
           if (selectorButtonBuilder != null) {
-            return selectorButtonBuilder(context, flag);
+            return selectorButtonBuilder!(context, flag);
           }
     return Container(
       child: Row(
