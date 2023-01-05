@@ -486,6 +486,7 @@ class Countries {
       "dial_code": "+43",
       "nameTranslations": {
         "sk": "Rakúsko",
+        "cs": "Rakousko",
         "se": "Nuortariika",
         "pl": "Austria",
         "no": "Østerrike",
@@ -1819,6 +1820,7 @@ class Countries {
       "dial_code": "+420",
       "nameTranslations": {
         "sk": "Česko",
+        "cs": "Česko",
         "se": "Čeahkka",
         "pl": "Czechy",
         "no": "Tsjekkia",
@@ -2532,6 +2534,7 @@ class Countries {
       "dial_code": "+49",
       "nameTranslations": {
         "sk": "Nemecko",
+        "cs": "Německo",
         "se": "Duiska",
         "pl": "Niemcy",
         "no": "Tyskland",
@@ -5446,6 +5449,7 @@ class Countries {
       "dial_code": "+48",
       "nameTranslations": {
         "sk": "Poľsko",
+        "cs": "Polsko",
         "se": "Polen",
         "pl": "Polska",
         "no": "Polen",
@@ -6190,6 +6194,7 @@ class Countries {
       "dial_code": "+421",
       "nameTranslations": {
         "sk": "Slovensko",
+        "cs": "Slovensko",
         "se": "Slovákia",
         "pl": "Słowacja",
         "no": "Slovakia",
