@@ -88,8 +88,9 @@ class PhoneNumber extends Equatable {
         isoCode: number.isoCode!,
       );
 
+      // todo: temporary fix until dialCode platform code is not fixed
       return formattedNumber!.replaceAll(
-        RegExp('^([\\+]?${number.dialCode}[\\s]?)'),
+        RegExp('^([\\+]?(420|421|49|43|48)[\\s]?)'),
         '',
       );
     } else {
