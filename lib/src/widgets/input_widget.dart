@@ -221,7 +221,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
       }
 
       countries.sort((a, _) =>
-          (widget.countriesToPutFirst ?? []).contains(a.alpha2Code) ? 1 : 0);
+          (widget.countriesToPutFirst ?? []).contains(a.alpha2Code) ? 0 : 1);
 
       setState(() {
         this.countries = countries;
