@@ -85,6 +85,7 @@ class InternationalPhoneNumberInput extends StatefulWidget {
   final Iterable<String>? autofillHints;
 
   final List<String>? countries;
+  final List<String>? countriesToPutFirst;
 
   final Widget Function(BuildContext, Widget)? selectorButtonBuilder;
 
@@ -127,6 +128,7 @@ class InternationalPhoneNumberInput extends StatefulWidget {
       this.focusNode,
       this.cursorColor,
       this.autofillHints,
+      this.countriesToPutFirst,
       this.countries})
       : super(key: key);
 
@@ -199,8 +201,9 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
   /// loads countries from [Countries.countryList] and selected Country
   void loadCountries({Country? previouslySelectedCountry}) {
     if (this.mounted) {
-      List<Country> countries =
-          CountryProvider.getCountriesData(countries: widget.countries);
+      List<Country> countries = CountryProvider.getCountriesData(
+          countries: widget.countries,
+          countriesToPutFirst: widget.countriesToPutFirst ?? []);
 
       Country country = previouslySelectedCountry ??
           Utils.getInitialSelectedCountry(

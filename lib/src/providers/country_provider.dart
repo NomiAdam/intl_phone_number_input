@@ -13,15 +13,24 @@ class CountryProvider {
   ///  * If [countries] is `null` or empty it returns a list of all [Countries.countryList].
   ///  * If [countries] is not empty it returns a filtered list containing
   ///    counties as specified.
-  static List<Country> getCountriesData({required List<String>? countries}) {
+  static List<Country> getCountriesData(
+      {required List<String>? countries,
+      List<String> countriesToPutFirst = const []}) {
     List jsonList = Countries.countryList;
 
     if (countries == null || countries.isEmpty) {
-      return jsonList.map((country) => Country.fromJson(country)).toList();
+      final countryList =
+          jsonList.map((country) => Country.fromJson(country)).toList();
+      countryList
+          .sort((a, _) => countriesToPutFirst.contains(a.alpha2Code) ? 1 : 0);
+      return countryList;
     }
     List filteredList = jsonList.where((country) {
       return countries.contains(country[PropertyName]);
     }).toList();
+
+    filteredList
+        .sort((a, _) => countriesToPutFirst.contains(a.alpha2Code) ? 1 : 0);
 
     return filteredList.map((country) => Country.fromJson(country)).toList();
   }

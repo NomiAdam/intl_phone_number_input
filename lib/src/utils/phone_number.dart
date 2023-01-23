@@ -88,9 +88,13 @@ class PhoneNumber extends Equatable {
         isoCode: number.isoCode!,
       );
 
+      final dialCodes = Countries.countryList
+          .map((country) => (country['dial_code'] ?? '').replace('+', ''))
+          .join('|');
+
       // todo: temporary fix until dialCode platform code is not fixed
       return formattedNumber!.replaceAll(
-        RegExp('^([\\+]?(420|421|49|43|48)[\\s]?)'),
+        RegExp('^([\\+]?($dialCodes)[\\s]?)'),
         '',
       );
     } else {
