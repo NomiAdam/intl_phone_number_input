@@ -89,10 +89,9 @@ class PhoneNumber extends Equatable {
       );
 
       final dialCodes = Countries.countryList
-          .map((country) => (country['dial_code'] ?? '').replace('+', ''))
+          .map((country) => (country['dial_code'] ?? '').replaceFirst('+', ''))
           .join('|');
 
-      // todo: temporary fix until dialCode platform code is not fixed
       return formattedNumber!.replaceAll(
         RegExp('^([\\+]?($dialCodes)[\\s]?)'),
         '',

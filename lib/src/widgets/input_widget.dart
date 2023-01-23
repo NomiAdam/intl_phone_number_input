@@ -202,8 +202,8 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
   void loadCountries({Country? previouslySelectedCountry}) {
     if (this.mounted) {
       List<Country> countries = CountryProvider.getCountriesData(
-          countries: widget.countries,
-          countriesToPutFirst: widget.countriesToPutFirst ?? []);
+        countries: widget.countries,
+      );
 
       Country country = previouslySelectedCountry ??
           Utils.getInitialSelectedCountry(
@@ -219,6 +219,9 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
       if (countryComparator != null) {
         countries.sort(countryComparator);
       }
+
+      countries.sort((a, _) =>
+          (widget.countriesToPutFirst ?? []).contains(a.alpha2Code) ? 1 : 0);
 
       setState(() {
         this.countries = countries;
