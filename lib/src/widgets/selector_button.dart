@@ -65,8 +65,7 @@ class SelectorButton extends StatelessWidget {
                 leadingPadding: selectorConfig.leadingPadding,
                 trailingSpace: selectorConfig.trailingSpace,
                 textStyle: selectorTextStyle,
-                selectorButtonBuilder: selectorButtonBuilder
-              )
+                selectorButtonBuilder: selectorButtonBuilder)
         : MaterialButton(
             key: Key(TestHelper.DropdownButtonKeyValue),
             padding: EdgeInsets.zero,
@@ -91,14 +90,13 @@ class SelectorButton extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(right: 8.0),
               child: Item(
-                country: country,
-                showFlag: selectorConfig.showFlags,
-                useEmoji: selectorConfig.useEmoji,
-                leadingPadding: selectorConfig.leadingPadding,
-                trailingSpace: selectorConfig.trailingSpace,
-                textStyle: selectorTextStyle,
-                selectorButtonBuilder: selectorButtonBuilder
-              ),
+                  country: country,
+                  showFlag: selectorConfig.showFlags,
+                  useEmoji: selectorConfig.useEmoji,
+                  leadingPadding: selectorConfig.leadingPadding,
+                  trailingSpace: selectorConfig.trailingSpace,
+                  textStyle: selectorTextStyle,
+                  selectorButtonBuilder: selectorButtonBuilder),
             ),
           );
   }
@@ -110,15 +108,14 @@ class SelectorButton extends StatelessWidget {
       return DropdownMenuItem<Country>(
         value: country,
         child: Item(
-          key: Key(TestHelper.countryItemKeyValue(country.alpha2Code)),
-          country: country,
-          showFlag: selectorConfig.showFlags,
-          useEmoji: selectorConfig.useEmoji,
-          textStyle: selectorTextStyle,
-          withCountryNames: false,
-          trailingSpace: selectorConfig.trailingSpace,
-          selectorButtonBuilder: selectorButtonBuilder
-        ),
+            key: Key(TestHelper.countryItemKeyValue(country.alpha2Code)),
+            country: country,
+            showFlag: selectorConfig.showFlags,
+            useEmoji: selectorConfig.useEmoji,
+            textStyle: selectorTextStyle,
+            withCountryNames: false,
+            trailingSpace: selectorConfig.trailingSpace,
+            selectorButtonBuilder: selectorButtonBuilder),
       );
     }).toList();
   }
@@ -158,44 +155,47 @@ class SelectorButton extends StatelessWidget {
       backgroundColor: Colors.transparent,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(12), topRight: Radius.circular(12))),
+              topLeft: Radius.circular(16), topRight: Radius.circular(16))),
       builder: (BuildContext context) {
-        return Stack(children: [
-          GestureDetector(
-            onTap: () => Navigator.pop(context),
-          ),
-          Padding(
-            padding: EdgeInsets.only(
-                bottom: MediaQuery.of(context).viewInsets.bottom),
-            child: DraggableScrollableSheet(
-              builder: (BuildContext context, ScrollController controller) {
-                return Directionality(
-                  textDirection: Directionality.of(inheritedContext),
-                  child: Container(
-                    decoration: ShapeDecoration(
-                      color: Theme.of(context).canvasColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(12),
-                          topRight: Radius.circular(12),
+        return SizedBox(
+          height: MediaQuery.of(context).size.height * 0.9,
+          child: Stack(children: [
+            GestureDetector(
+              onTap: () => Navigator.pop(context),
+            ),
+            Padding(
+              padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).viewInsets.bottom),
+              child: DraggableScrollableSheet(
+                builder: (BuildContext context, ScrollController controller) {
+                  return Directionality(
+                    textDirection: Directionality.of(inheritedContext),
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        color: Theme.of(context).canvasColor,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(16),
+                            topRight: Radius.circular(16),
+                          ),
                         ),
                       ),
+                      child: CountrySearchListWidget(
+                        countries,
+                        locale,
+                        searchBoxDecoration: searchBoxDecoration,
+                        scrollController: controller,
+                        showFlags: selectorConfig.showFlags,
+                        useEmoji: selectorConfig.useEmoji,
+                        autoFocus: autoFocusSearchField,
+                      ),
                     ),
-                    child: CountrySearchListWidget(
-                      countries,
-                      locale,
-                      searchBoxDecoration: searchBoxDecoration,
-                      scrollController: controller,
-                      showFlags: selectorConfig.showFlags,
-                      useEmoji: selectorConfig.useEmoji,
-                      autoFocus: autoFocusSearchField,
-                    ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
-          ),
-        ]);
+          ]),
+        );
       },
     );
   }
