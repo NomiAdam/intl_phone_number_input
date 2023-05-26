@@ -328,37 +328,6 @@ class Countries {
       }
     },
     {
-      "num_code": "36",
-      "alpha_2_code": "AU",
-      "alpha_3_code": "AUS",
-      "en_short_name": "Australia",
-      "nationality": "Australian",
-      "dial_code": "+61",
-      "nameTranslations": {
-        "sk": "Austrália",
-        "se": "Austrália",
-        "pl": "Australia",
-        "no": "Australia",
-        "ja": "オーストラリア",
-        "it": "Australia",
-        "zh": "澳大利亚",
-        "nl": "Australië",
-        "de": "Australien",
-        "fr": "Australie",
-        "es": "Australia",
-        "en": "Australia",
-        "pt_BR": "Austrália",
-        "sr-Cyrl": "Аустралија",
-        "sr-Latn": "Australija",
-        "zh_TW": "澳州",
-        "tr": "Avustralya",
-        "ro": "Australia",
-        "ar": "أستراليا",
-        "fa": "استرالیا",
-        "yue": "澳洲"
-      }
-    },
-    {
       "num_code": "112",
       "alpha_2_code": "BY",
       "alpha_3_code": "BLR",
@@ -449,37 +418,6 @@ class Countries {
         "ar": "البوسنة والهرسك",
         "fa": "بوسنی و هرزگوین",
         "yue": "波斯尼亞黑塞哥維那"
-      }
-    },
-    {
-      "num_code": "124",
-      "alpha_2_code": "CA",
-      "alpha_3_code": "CAN",
-      "en_short_name": "Canada",
-      "nationality": "Canadian",
-      "dial_code": "+1",
-      "nameTranslations": {
-        "sk": "Kanada",
-        "se": "Kanáda",
-        "pl": "Kanada",
-        "no": "Canada",
-        "ja": "カナダ",
-        "it": "Canada",
-        "zh": "加拿大",
-        "nl": "Canada",
-        "de": "Kanada",
-        "fr": "Canada",
-        "es": "Canadá",
-        "en": "Canada",
-        "pt_BR": "Canadá",
-        "sr-Cyrl": "Канада",
-        "sr-Latn": "Kanada",
-        "zh_TW": "加拿大",
-        "tr": "Kanada",
-        "ro": "Canada",
-        "ar": "كندا",
-        "fa": "کانادا",
-        "yue": "加拿大"
       }
     },
     {
@@ -883,37 +821,6 @@ class Countries {
         "ar": "جزيرة مان",
         "fa": "جزیره مان",
         "yue": "马伊岛"
-      }
-    },
-    {
-      "num_code": "392",
-      "alpha_2_code": "JP",
-      "alpha_3_code": "JPN",
-      "en_short_name": "Japan",
-      "nationality": "Japanese",
-      "dial_code": "+81",
-      "nameTranslations": {
-        "sk": "Japonsko",
-        "se": "Japána",
-        "pl": "Japonia",
-        "no": "Japan",
-        "ja": "日本",
-        "it": "Giappone",
-        "zh": "日本",
-        "nl": "Japan",
-        "de": "Japan",
-        "fr": "Japon",
-        "es": "Japón",
-        "en": "Japan",
-        "pt_BR": "Japão",
-        "sr-Cyrl": "Јапан",
-        "sr-Latn": "Japan",
-        "zh_TW": "日本",
-        "tr": "Japonya",
-        "ro": "Japonia",
-        "ar": "اليابان",
-        "fa": "ژاپن",
-        "yue": "日本"
       }
     },
     {
@@ -1441,37 +1348,6 @@ class Countries {
         "ar": "رومانيا",
         "fa": "رومانی",
         "yue": "羅馬尼亞"
-      }
-    },
-    {
-      "num_code": "643",
-      "alpha_2_code": "RU",
-      "alpha_3_code": "RUS",
-      "en_short_name": "Russian Federation",
-      "nationality": "Russian",
-      "dial_code": "+7",
-      "nameTranslations": {
-        "sk": "Rusko",
-        "se": "Ruošša",
-        "pl": "Rosja",
-        "no": "Russland",
-        "ja": "ロシア",
-        "it": "Russia",
-        "zh": "俄罗斯",
-        "nl": "Rusland",
-        "de": "Russland",
-        "fr": "Russie",
-        "es": "Rusia",
-        "en": "Russia",
-        "pt_BR": "Rússia",
-        "sr-Cyrl": "Русија",
-        "sr-Latn": "Rusija",
-        "zh_TW": "俄羅斯",
-        "tr": "Rusya",
-        "ro": "Rusia",
-        "ar": "روسيا",
-        "fa": "روسیه",
-        "yue": "俄儸斯聯邦"
       }
     },
     {
