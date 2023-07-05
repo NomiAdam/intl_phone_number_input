@@ -222,11 +222,18 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
           .map((country) => (country['dial_code'] ?? '').replaceFirst('+', ''))
           .join('|');
 
-      String parsedPhoneNumberString =
-          controller!.text.replaceAll(RegExp(r'[^\d+]'), '').replaceAll(
-                RegExp('^([\\+]?($dialCodes)[\\s]?)'),
-                '',
-              );
+      if (controller!.text.startsWith('+') &&
+          controller!.text.startsWith(RegExp('^([\\+]?($dialCodes)[\\s]?)'))) {
+        controller!.text = controller!.text.replaceAll(
+          RegExp('^([\\+]?($dialCodes)[\\s]?)'),
+          '',
+        );
+
+        controller!.selection = TextSelection.fromPosition(
+            TextPosition(offset: controller!.text.length));
+      }
+
+      String parsedPhoneNumberString = controller!.text;
 
       getParsedPhoneNumber(parsedPhoneNumberString, this.country?.alpha2Code)
           .then((phoneNumber) {
