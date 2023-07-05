@@ -218,8 +218,15 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
   /// the `ValueCallback` [widget.onInputValidated]
   void phoneNumberControllerListener() {
     if (this.mounted) {
+      final dialCodes = Countries.countryList
+          .map((country) => (country['dial_code'] ?? '').replaceFirst('+', ''))
+          .join('|');
+
       String parsedPhoneNumberString =
-          controller!.text.replaceAll(RegExp(r'[^\d+]'), '');
+          controller!.text.replaceAll(RegExp(r'[^\d+]'), '').replaceAll(
+                RegExp('^([\\+]?($dialCodes)[\\s]?)'),
+                '',
+              );
 
       getParsedPhoneNumber(parsedPhoneNumberString, this.country?.alpha2Code)
           .then((phoneNumber) {
