@@ -33,13 +33,13 @@ class Item extends StatelessWidget {
       dialCode = dialCode.padRight(5, "   ");
     }
     final flag = _Flag(
-            country: country,
-            showFlag: showFlag,
-            useEmoji: useEmoji,
-          );
-          if (selectorButtonBuilder != null) {
-            return selectorButtonBuilder!(context, flag);
-          }
+      country: country,
+      showFlag: showFlag,
+      useEmoji: useEmoji,
+    );
+    if (selectorButtonBuilder != null) {
+      return selectorButtonBuilder!(context, flag);
+    }
     return Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -74,7 +74,7 @@ class _Flag extends StatelessWidget {
             child: useEmoji!
                 ? Text(
                     Utils.generateFlagEmojiUnicode(country?.alpha2Code ?? ''),
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headlineSmall,
                   )
                 : Image.asset(
                     country!.flagUri,
