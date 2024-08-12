@@ -1598,5 +1598,36 @@ class Countries {
         "yue": "大不列顛及北愛爾蘭聯合王國"
       }
     },
+    {
+      "num_code": "376",
+      "alpha_2_code": "IL",
+      "alpha_3_code": "ISR",
+      "en_short_name": "Israel",
+      "nationality": "Israeli",
+      "dial_code": "+972",
+      "nameTranslations": {
+        "sk": "Izrael",
+        "se": "Israel",
+        "pl": "Izrael",
+        "no": "Israel",
+        "ja": "イスラエル",
+        "it": "Israele",
+        "zh": "以色列",
+        "nl": "Israël",
+        "de": "Israel",
+        "fr": "Israël",
+        "es": "Israel",
+        "en": "Israel",
+        "pt_BR": "Israel",
+        "sr-Cyrl": "Израел",
+        "sr-Latn": "Izrael",
+        "zh_TW": "以色列",
+        "tr": "İsrail",
+        "ro": "Israel",
+        "ar": "إسرائيل",
+        "fa": "اسرائیل",
+        "yue": "以色列"
+      }
+    }
   ];
 }
