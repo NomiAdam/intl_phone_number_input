@@ -297,6 +297,37 @@ class Countries {
       }
     },
     {
+      "num_code": "100",
+      "alpha_2_code": "BG",
+      "alpha_3_code": "BGR",
+      "en_short_name": "Bulgaria",
+      "nationality": "Bulgarian",
+      "dial_code": "+359",
+      "nameTranslations": {
+        "sk": "Bulharsko",
+        "se": "Bulgária",
+        "pl": "Bułgaria",
+        "no": "Bulgaria",
+        "ja": "ブルガリア",
+        "it": "Bulgaria",
+        "zh": "保加利亚",
+        "nl": "Bulgarije",
+        "de": "Bulgarien",
+        "fr": "Bulgarie",
+        "es": "Bulgaria",
+        "en": "Bulgaria",
+        "pt_BR": "Bulgária",
+        "sr-Cyrl": "Бугарска",
+        "sr-Latn": "Bugarska",
+        "zh_TW": "保加利亞",
+        "tr": "Bulgaristan",
+        "ro": "Bulgaria",
+        "ar": "بلغاريا",
+        "fa": "بلغارستان",
+        "yue": "保加利亞"
+      }
+    },
+    {
       "num_code": "51",
       "alpha_2_code": "AM",
       "alpha_3_code": "ARM",
