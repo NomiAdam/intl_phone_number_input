@@ -72,8 +72,8 @@ class Countries {
         "ro": "Cehia",
         "ar": "جمهورية التشيك",
         "fa": "جمهوری چک",
-        "yue": "捷克共和國"
-      }
+        "yue": "捷克共和國",
+      },
     },
     {
       "num_code": "703",
@@ -104,8 +104,8 @@ class Countries {
         "ro": "Slovacia",
         "ar": "سلوفاكيا",
         "fa": "اسلواکی",
-        "yue": "斯洛伐克"
-      }
+        "yue": "斯洛伐克",
+      },
     },
     {
       "num_code": "276",
@@ -136,8 +136,8 @@ class Countries {
         "ro": "Germania",
         "ar": "ألمانيا",
         "fa": "آلمان",
-        "yue": "德國"
-      }
+        "yue": "德國",
+      },
     },
     {
       "num_code": "40",
@@ -168,8 +168,8 @@ class Countries {
         "ro": "Austria",
         "ar": "النمسا",
         "fa": "اتریش",
-        "yue": "奧地利"
-      }
+        "yue": "奧地利",
+      },
     },
     {
       "num_code": "616",
@@ -200,8 +200,8 @@ class Countries {
         "ro": "Polonia",
         "ar": "بولندا",
         "fa": "لهستان",
-        "yue": "波蘭"
-      }
+        "yue": "波蘭",
+      },
     },
     {
       "num_code": "348",
@@ -231,8 +231,8 @@ class Countries {
         "ro": "Ungaria",
         "ar": "المجر",
         "fa": "مجارستان",
-        "yue": "匈牙利"
-      }
+        "yue": "匈牙利",
+      },
     },
     {
       "num_code": "380",
@@ -262,8 +262,8 @@ class Countries {
         "ro": "Italia",
         "ar": "إيطاليا",
         "fa": "ایتالیا",
-        "yue": "意大利"
-      }
+        "yue": "意大利",
+      },
     },
     {
       "num_code": "8",
@@ -293,8 +293,8 @@ class Countries {
         "ro": "Albania",
         "ar": "ألبانيا",
         "fa": "آلبانی",
-        "yue": "阿爾巴尼亞"
-      }
+        "yue": "阿爾巴尼亞",
+      },
     },
     {
       "num_code": "100",
@@ -324,8 +324,8 @@ class Countries {
         "ro": "Bulgaria",
         "ar": "بلغاريا",
         "fa": "بلغارستان",
-        "yue": "保加利亞"
-      }
+        "yue": "保加利亞",
+      },
     },
     {
       "num_code": "51",
@@ -355,8 +355,8 @@ class Countries {
         "ro": "Armenia",
         "ar": "أرمينيا",
         "fa": "ارمنستان",
-        "yue": "亞美尼亞"
-      }
+        "yue": "亞美尼亞",
+      },
     },
     {
       "num_code": "112",
@@ -386,8 +386,8 @@ class Countries {
         "ro": "Belarus",
         "ar": "بيلاروس",
         "fa": "بلاروس",
-        "yue": "白俄羅斯"
-      }
+        "yue": "白俄羅斯",
+      },
     },
     {
       "num_code": "56",
@@ -417,8 +417,8 @@ class Countries {
         "ro": "Belgia",
         "ar": "بلجيكا",
         "fa": "بلژیک",
-        "yue": "比利時"
-      }
+        "yue": "比利時",
+      },
     },
     {
       "num_code": "70",
@@ -448,8 +448,8 @@ class Countries {
         "ro": "Bosnia și Herțegovina",
         "ar": "البوسنة والهرسك",
         "fa": "بوسنی و هرزگوین",
-        "yue": "波斯尼亞黑塞哥維那"
-      }
+        "yue": "波斯尼亞黑塞哥維那",
+      },
     },
     {
       "num_code": "191",
@@ -479,8 +479,8 @@ class Countries {
         "ro": "Croația",
         "ar": "كرواتيا",
         "fa": "کرواسی",
-        "yue": "克羅地亞"
-      }
+        "yue": "克羅地亞",
+      },
     },
     {
       "num_code": "196",
@@ -510,8 +510,8 @@ class Countries {
         "ro": "Cipru",
         "ar": "قبرص",
         "fa": "قبرس",
-        "yue": "塞浦路斯"
-      }
+        "yue": "塞浦路斯",
+      },
     },
     {
       "num_code": "208",
@@ -541,8 +541,8 @@ class Countries {
         "ro": "Danemarca",
         "ar": "الدنمارك",
         "fa": "دانمارک",
-        "yue": "丹麥"
-      }
+        "yue": "丹麥",
+      },
     },
     {
       "num_code": "233",
@@ -572,8 +572,8 @@ class Countries {
         "ro": "Estonia",
         "ar": "إستونيا",
         "fa": "استونی",
-        "yue": "愛沙尼亞"
-      }
+        "yue": "愛沙尼亞",
+      },
     },
     {
       "num_code": "246",
@@ -603,8 +603,8 @@ class Countries {
         "ro": "Finlanda",
         "ar": "فنلندا",
         "fa": "فنلاند",
-        "yue": "芬蘭"
-      }
+        "yue": "芬蘭",
+      },
     },
     {
       "num_code": "250",
@@ -634,8 +634,8 @@ class Countries {
         "ro": "Franța",
         "ar": "فرنسا",
         "fa": "فرانسه",
-        "yue": "法國"
-      }
+        "yue": "法國",
+      },
     },
     {
       "num_code": "292",
@@ -665,8 +665,8 @@ class Countries {
         "ro": "Gibraltar",
         "ar": "جبل طارق",
         "fa": "جبل الطارق",
-        "yue": "直布羅陀"
-      }
+        "yue": "直布羅陀",
+      },
     },
     {
       "num_code": "300",
@@ -696,8 +696,8 @@ class Countries {
         "ro": "Grecia",
         "ar": "اليونان",
         "fa": "یونان",
-        "yue": "希臘"
-      }
+        "yue": "希臘",
+      },
     },
     {
       "num_code": "304",
@@ -727,8 +727,8 @@ class Countries {
         "ro": "Groenlanda",
         "ar": "جرينلاند",
         "fa": "گرینلند",
-        "yue": "格陵蘭"
-      }
+        "yue": "格陵蘭",
+      },
     },
     {
       "num_code": "336",
@@ -758,8 +758,8 @@ class Countries {
         "ro": "Vatican",
         "ar": "الفاتيكان",
         "fa": "واتیکان",
-        "yue": "梵蒂岡城國"
-      }
+        "yue": "梵蒂岡城國",
+      },
     },
     {
       "num_code": "352",
@@ -789,8 +789,8 @@ class Countries {
         "ro": "Islanda",
         "ar": "آيسلندا",
         "fa": "ایسلند",
-        "yue": "冰島"
-      }
+        "yue": "冰島",
+      },
     },
     {
       "num_code": "372",
@@ -820,8 +820,40 @@ class Countries {
         "ro": "Irlanda",
         "ar": "أيرلندا",
         "fa": "ایرلند",
-        "yue": "愛爾蘭"
-      }
+        "yue": "愛爾蘭",
+      },
+    },
+    {
+      "num_code": "840",
+      "alpha_2_code": "US",
+      "alpha_3_code": "USA",
+      "en_short_name": "United States of America",
+      "nationality": "American",
+      "dial_code": "+1",
+      "nameTranslations": {
+        "sk": "Spojené štáty",
+        "cs": "Spojené státy",
+        "se": "Ovttastuvvan Stáhtat",
+        "pl": "Stany Zjednoczone",
+        "no": "USA",
+        "ja": "アメリカ合衆国",
+        "it": "Stati Uniti",
+        "zh": "美国",
+        "nl": "Verenigde Staten",
+        "de": "Vereinigte Staaten",
+        "fr": "États-Unis",
+        "es": "Estados Unidos",
+        "en": "United States",
+        "pt_BR": "Estados Unidos",
+        "sr-Cyrl": "Сједињене Америчке Државе",
+        "sr-Latn": "Sjedinjene Američke Države",
+        "zh_TW": "美國",
+        "tr": "Amerika Birleşik Devletleri",
+        "ro": "Statele Unite",
+        "ar": "الولايات المتحدة",
+        "fa": "ایالات متحده آمریکا",
+        "yue": "美國",
+      },
     },
     {
       "num_code": "833",
@@ -851,8 +883,8 @@ class Countries {
         "ro": "Insula Man",
         "ar": "جزيرة مان",
         "fa": "جزیره مان",
-        "yue": "马伊岛"
-      }
+        "yue": "马伊岛",
+      },
     },
     {
       "num_code": "398",
@@ -882,8 +914,8 @@ class Countries {
         "ro": "Kazahstan",
         "ar": "كازاخستان",
         "fa": "قزاقستان",
-        "yue": "哈薩克斯坦"
-      }
+        "yue": "哈薩克斯坦",
+      },
     },
     {
       "num_code": "410",
@@ -913,8 +945,8 @@ class Countries {
         "ro": "Coreea de Sud",
         "ar": "كوريا الجنوبية",
         "fa": "کره جنوبی",
-        "yue": "韓國（大韓民國）"
-      }
+        "yue": "韓國（大韓民國）",
+      },
     },
     {
       "num_code": "417",
@@ -944,8 +976,8 @@ class Countries {
         "ro": "Kîrgîzstan",
         "ar": "قيرغيزستان",
         "fa": "قرقیزستان",
-        "yue": "吉爾吉斯斯坦"
-      }
+        "yue": "吉爾吉斯斯坦",
+      },
     },
     {
       "num_code": "428",
@@ -975,8 +1007,8 @@ class Countries {
         "ro": "Letonia",
         "ar": "لاتفيا",
         "fa": "لتونی",
-        "yue": "拉脫維亞"
-      }
+        "yue": "拉脫維亞",
+      },
     },
     {
       "num_code": "422",
@@ -1006,8 +1038,8 @@ class Countries {
         "ro": "Liban",
         "ar": "لبنان",
         "fa": "لبنان",
-        "yue": "黎巴嫩"
-      }
+        "yue": "黎巴嫩",
+      },
     },
     {
       "num_code": "438",
@@ -1037,8 +1069,8 @@ class Countries {
         "ro": "Liechtenstein",
         "ar": "ليختنشتاين",
         "fa": "لیختن‌اشتاین",
-        "yue": "列支敦士登"
-      }
+        "yue": "列支敦士登",
+      },
     },
     {
       "num_code": "440",
@@ -1068,8 +1100,8 @@ class Countries {
         "ro": "Lituania",
         "ar": "ليتوانيا",
         "fa": "لیتوانی",
-        "yue": "立陶宛"
-      }
+        "yue": "立陶宛",
+      },
     },
     {
       "num_code": "442",
@@ -1099,8 +1131,8 @@ class Countries {
         "ro": "Luxemburg",
         "ar": "لوكسمبورغ",
         "fa": "لوکزامبورگ",
-        "yue": "盧森堡"
-      }
+        "yue": "盧森堡",
+      },
     },
     {
       "num_code": "470",
@@ -1130,8 +1162,8 @@ class Countries {
         "ro": "Malta",
         "ar": "مالطا",
         "fa": "مالت",
-        "yue": "馬耳他"
-      }
+        "yue": "馬耳他",
+      },
     },
     {
       "num_code": "498",
@@ -1161,8 +1193,8 @@ class Countries {
         "ro": "Moldova",
         "ar": "مولدوفا",
         "fa": "مولداوی",
-        "yue": "摩爾多瓦（共和國）"
-      }
+        "yue": "摩爾多瓦（共和國）",
+      },
     },
     {
       "num_code": "492",
@@ -1192,8 +1224,8 @@ class Countries {
         "ro": "Monaco",
         "ar": "موناكو",
         "fa": "موناكو",
-        "yue": "摩納哥"
-      }
+        "yue": "摩納哥",
+      },
     },
     {
       "num_code": "496",
@@ -1223,8 +1255,8 @@ class Countries {
         "ro": "Mongolia",
         "ar": "منغوليا",
         "fa": "مغولستان",
-        "yue": "蒙古"
-      }
+        "yue": "蒙古",
+      },
     },
     {
       "num_code": "499",
@@ -1254,8 +1286,8 @@ class Countries {
         "ro": "Muntenegru",
         "ar": "الجبل الأسود",
         "fa": "مونته‌نگرو",
-        "yue": "黑山"
-      }
+        "yue": "黑山",
+      },
     },
     {
       "num_code": "528",
@@ -1285,8 +1317,8 @@ class Countries {
         "ro": "Olanda",
         "ar": "هولندا",
         "fa": "هلند",
-        "yue": "荷蘭"
-      }
+        "yue": "荷蘭",
+      },
     },
     {
       "num_code": "578",
@@ -1316,8 +1348,8 @@ class Countries {
         "ro": "Norvegia",
         "ar": "النرويج",
         "fa": "نروژ",
-        "yue": "挪威"
-      }
+        "yue": "挪威",
+      },
     },
     {
       "num_code": "620",
@@ -1347,8 +1379,8 @@ class Countries {
         "ro": "Portugalia",
         "ar": "البرتغال",
         "fa": "پرتغال",
-        "yue": "葡萄牙"
-      }
+        "yue": "葡萄牙",
+      },
     },
     {
       "num_code": "642",
@@ -1378,8 +1410,8 @@ class Countries {
         "ro": "România",
         "ar": "رومانيا",
         "fa": "رومانی",
-        "yue": "羅馬尼亞"
-      }
+        "yue": "羅馬尼亞",
+      },
     },
     {
       "num_code": "688",
@@ -1409,8 +1441,8 @@ class Countries {
         "ro": "Serbia",
         "ar": "صربيا",
         "fa": "صربستان",
-        "yue": "塞爾維亞"
-      }
+        "yue": "塞爾維亞",
+      },
     },
     {
       "num_code": "705",
@@ -1440,8 +1472,8 @@ class Countries {
         "ro": "Slovenia",
         "ar": "سلوفينيا",
         "fa": "اسلوونی",
-        "yue": "斯洛文尼亞"
-      }
+        "yue": "斯洛文尼亞",
+      },
     },
     {
       "num_code": "724",
@@ -1471,8 +1503,8 @@ class Countries {
         "ro": "Spania",
         "ar": "إسبانيا",
         "fa": "اسپانیا",
-        "yue": "西班牙"
-      }
+        "yue": "西班牙",
+      },
     },
     {
       "num_code": "752",
@@ -1502,8 +1534,8 @@ class Countries {
         "ro": "Suedia",
         "ar": "السويد",
         "fa": "سوئد",
-        "yue": "瑞典"
-      }
+        "yue": "瑞典",
+      },
     },
     {
       "num_code": "756",
@@ -1533,8 +1565,8 @@ class Countries {
         "ro": "Elveţia",
         "ar": "سويسرا",
         "fa": "سوئیس",
-        "yue": "瑞士"
-      }
+        "yue": "瑞士",
+      },
     },
     {
       "num_code": "792",
@@ -1564,8 +1596,8 @@ class Countries {
         "ro": "Turcia",
         "ar": "تركيا",
         "fa": "ترکیه",
-        "yue": "土耳其"
-      }
+        "yue": "土耳其",
+      },
     },
     {
       "num_code": "804",
@@ -1595,8 +1627,8 @@ class Countries {
         "ro": "Ucraína",
         "ar": "أوكرانيا",
         "fa": "اوکراین",
-        "yue": "烏克蘭"
-      }
+        "yue": "烏克蘭",
+      },
     },
     {
       "num_code": "826",
@@ -1626,8 +1658,8 @@ class Countries {
         "ro": "Regatul Unit al Marii Britanii și Irlandei de Nord",
         "ar": "المملكة المتحدة",
         "fa": "بریتانیا",
-        "yue": "大不列顛及北愛爾蘭聯合王國"
-      }
+        "yue": "大不列顛及北愛爾蘭聯合王國",
+      },
     },
     {
       "num_code": "376",
@@ -1657,8 +1689,8 @@ class Countries {
         "ro": "Israel",
         "ar": "إسرائيل",
         "fa": "اسرائیل",
-        "yue": "以色列"
-      }
-    }
+        "yue": "以色列",
+      },
+    },
   ];
 }
