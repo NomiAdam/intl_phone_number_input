@@ -41,31 +41,32 @@ class SelectorButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return selectorConfig.selectorType == PhoneInputSelectorType.DROPDOWN
         ? countries.isNotEmpty && countries.length > 1
-            ? DropdownButtonHideUnderline(
-                child: DropdownButton<Country>(
-                  key: Key(TestHelper.DropdownButtonKeyValue),
-                  hint: Item(
-                    country: country,
-                    showFlag: selectorConfig.showFlags,
-                    useEmoji: selectorConfig.useEmoji,
-                    leadingPadding: selectorConfig.leadingPadding,
-                    trailingSpace: selectorConfig.trailingSpace,
-                    textStyle: selectorTextStyle,
-                    selectorButtonBuilder: selectorButtonBuilder,
+              ? DropdownButtonHideUnderline(
+                  child: DropdownButton<Country>(
+                    key: Key(TestHelper.DropdownButtonKeyValue),
+                    hint: Item(
+                      country: country,
+                      showFlag: selectorConfig.showFlags,
+                      useEmoji: selectorConfig.useEmoji,
+                      leadingPadding: selectorConfig.leadingPadding,
+                      trailingSpace: selectorConfig.trailingSpace,
+                      textStyle: selectorTextStyle,
+                      selectorButtonBuilder: selectorButtonBuilder,
+                    ),
+                    value: country,
+                    items: mapCountryToDropdownItem(countries),
+                    onChanged: isEnabled ? onCountryChanged : null,
                   ),
-                  value: country,
-                  items: mapCountryToDropdownItem(countries),
-                  onChanged: isEnabled ? onCountryChanged : null,
-                ),
-              )
-            : Item(
-                country: country,
-                showFlag: selectorConfig.showFlags,
-                useEmoji: selectorConfig.useEmoji,
-                leadingPadding: selectorConfig.leadingPadding,
-                trailingSpace: selectorConfig.trailingSpace,
-                textStyle: selectorTextStyle,
-                selectorButtonBuilder: selectorButtonBuilder)
+                )
+              : Item(
+                  country: country,
+                  showFlag: selectorConfig.showFlags,
+                  useEmoji: selectorConfig.useEmoji,
+                  leadingPadding: selectorConfig.leadingPadding,
+                  trailingSpace: selectorConfig.trailingSpace,
+                  textStyle: selectorTextStyle,
+                  selectorButtonBuilder: selectorButtonBuilder,
+                )
         : MaterialButton(
             key: Key(TestHelper.DropdownButtonKeyValue),
             padding: EdgeInsets.zero,
@@ -76,10 +77,14 @@ class SelectorButton extends StatelessWidget {
                     if (selectorConfig.selectorType ==
                         PhoneInputSelectorType.BOTTOM_SHEET) {
                       selected = await showCountrySelectorBottomSheet(
-                          context, countries);
+                        context,
+                        countries,
+                      );
                     } else {
-                      selected =
-                          await showCountrySelectorDialog(context, countries);
+                      selected = await showCountrySelectorDialog(
+                        context,
+                        countries,
+                      );
                     }
 
                     if (selected != null) {
@@ -90,39 +95,44 @@ class SelectorButton extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(right: 8.0),
               child: Item(
-                  country: country,
-                  showFlag: selectorConfig.showFlags,
-                  useEmoji: selectorConfig.useEmoji,
-                  leadingPadding: selectorConfig.leadingPadding,
-                  trailingSpace: selectorConfig.trailingSpace,
-                  textStyle: selectorTextStyle,
-                  selectorButtonBuilder: selectorButtonBuilder),
+                country: country,
+                showFlag: selectorConfig.showFlags,
+                useEmoji: selectorConfig.useEmoji,
+                leadingPadding: selectorConfig.leadingPadding,
+                trailingSpace: selectorConfig.trailingSpace,
+                textStyle: selectorTextStyle,
+                selectorButtonBuilder: selectorButtonBuilder,
+              ),
             ),
           );
   }
 
   /// Converts the list [countries] to `DropdownMenuItem`
   List<DropdownMenuItem<Country>> mapCountryToDropdownItem(
-      List<Country> countries) {
+    List<Country> countries,
+  ) {
     return countries.map((country) {
       return DropdownMenuItem<Country>(
         value: country,
         child: Item(
-            key: Key(TestHelper.countryItemKeyValue(country.alpha2Code)),
-            country: country,
-            showFlag: selectorConfig.showFlags,
-            useEmoji: selectorConfig.useEmoji,
-            textStyle: selectorTextStyle,
-            withCountryNames: false,
-            trailingSpace: selectorConfig.trailingSpace,
-            selectorButtonBuilder: selectorButtonBuilder),
+          key: Key(TestHelper.countryItemKeyValue(country.alpha2Code)),
+          country: country,
+          showFlag: selectorConfig.showFlags,
+          useEmoji: selectorConfig.useEmoji,
+          textStyle: selectorTextStyle,
+          withCountryNames: false,
+          trailingSpace: selectorConfig.trailingSpace,
+          selectorButtonBuilder: selectorButtonBuilder,
+        ),
       );
     }).toList();
   }
 
   /// shows a Dialog with list [countries] if the [PhoneInputSelectorType.DIALOG] is selected
   Future<Country?> showCountrySelectorDialog(
-      BuildContext inheritedContext, List<Country> countries) {
+    BuildContext inheritedContext,
+    List<Country> countries,
+  ) {
     return showDialog(
       context: inheritedContext,
       barrierDismissible: true,
@@ -147,54 +157,61 @@ class SelectorButton extends StatelessWidget {
 
   /// shows a Dialog with list [countries] if the [PhoneInputSelectorType.BOTTOM_SHEET] is selected
   Future<Country?> showCountrySelectorBottomSheet(
-      BuildContext inheritedContext, List<Country> countries) {
+    BuildContext inheritedContext,
+    List<Country> countries,
+  ) {
     return showModalBottomSheet(
+      useRootNavigator: true,
       context: inheritedContext,
       clipBehavior: Clip.hardEdge,
       isScrollControlled: isScrollControlled,
       backgroundColor: Colors.transparent,
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(16), topRight: Radius.circular(16))),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(16),
+          topRight: Radius.circular(16),
+        ),
+      ),
       builder: (BuildContext context) {
         return SizedBox(
           height: MediaQuery.of(context).size.height * 0.9,
-          child: Stack(children: [
-            GestureDetector(
-              onTap: () => Navigator.pop(context),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                  bottom: MediaQuery.of(context).viewInsets.bottom),
-              child: DraggableScrollableSheet(
-                builder: (BuildContext context, ScrollController controller) {
-                  return Directionality(
-                    textDirection: Directionality.of(inheritedContext),
-                    child: Container(
-                      decoration: ShapeDecoration(
-                        color: Theme.of(context).canvasColor,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(16),
-                            topRight: Radius.circular(16),
+          child: Stack(
+            children: [
+              GestureDetector(onTap: () => Navigator.pop(context)),
+              Padding(
+                padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).viewInsets.bottom,
+                ),
+                child: DraggableScrollableSheet(
+                  builder: (BuildContext context, ScrollController controller) {
+                    return Directionality(
+                      textDirection: Directionality.of(inheritedContext),
+                      child: Container(
+                        decoration: ShapeDecoration(
+                          color: Theme.of(context).canvasColor,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(16),
+                              topRight: Radius.circular(16),
+                            ),
                           ),
                         ),
+                        child: CountrySearchListWidget(
+                          countries,
+                          locale,
+                          searchBoxDecoration: searchBoxDecoration,
+                          scrollController: controller,
+                          showFlags: selectorConfig.showFlags,
+                          useEmoji: selectorConfig.useEmoji,
+                          autoFocus: autoFocusSearchField,
+                        ),
                       ),
-                      child: CountrySearchListWidget(
-                        countries,
-                        locale,
-                        searchBoxDecoration: searchBoxDecoration,
-                        scrollController: controller,
-                        showFlags: selectorConfig.showFlags,
-                        useEmoji: selectorConfig.useEmoji,
-                        autoFocus: autoFocusSearchField,
-                      ),
-                    ),
-                  );
-                },
+                    );
+                  },
+                ),
               ),
-            ),
-          ]),
+            ],
+          ),
         );
       },
     );
