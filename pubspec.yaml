@@ -18,6 +18,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+dependency_overrides:
+  libphonenumber_web:
+    git:
+      url: https://github.com/NomiAdam/plugin_libphonenumber.git
+      ref: migrate_to_next_gen_js_interop
+      path: libphonenumber_web
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
